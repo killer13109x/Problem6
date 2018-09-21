@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+        <TextView
+            android:layout_margin="15dp"
+            android:background="#00760c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tính tổng 2 số"
+            android:textSize="40dp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Số a:"
+                android:textSize="25dp"
+                android:textColor="#000000"/>
+            <EditText
+                android:id="@+id/edt_soA"
+                android:layout_weight="4"
+                android:inputType="numberSigned"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:weightSum="5"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số b:"
+                android:textSize="25dp"
+                android:layout_weight="4"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/edt_soB"
+                android:inputType="numberSigned"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_ketqua"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="#ffffff"
+            android:background="#00760c"/>
+        <LinearLayout
+            android:layout_margin="15dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Tổng 2 số"
+                android:onClick="Tong"
+                android:textAllCaps="false"
+                android:textSize="30dp"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Clean"
+                android:onClick="Clean"
+                android:textAllCaps="false"
+                android:textSize="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>
